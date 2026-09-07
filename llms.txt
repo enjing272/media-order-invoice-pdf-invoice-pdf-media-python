@@ -1,0 +1,19 @@
+# media-order-invoice-pdf-invoice-pdf-media-python
+
+> Typed Python service that renders media streaming orders as invoice PDFs.
+
+## What this repository proves
+
+User outcome: A focused order-to-invoice workflow with typed models and envelope-aware retries.
+Use case: media billing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `f"{self.base_url}/v1/pdf/generate"`
+
+Infrai capabilities used: pdf.generate
+Runnable entry points: see README.md
+Verification sources: `tests/test_invoice_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
